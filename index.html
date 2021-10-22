@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Marcos Wlrich - DOWhile 2021</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="avatar">
+          <span>
+            <img src="img/rocketseat.svg" alt="Selo Rocketseat" />
+          </span>
+          <img src="img/perfil.jpg" alt="Foto perfil" />
+        </div>
+        <h1 id="userName">Marcos Wlrich</h1>
+        <a href="" target="_blank"
+          ><img src="img/github 2.svg" alt="Github" /> marcoswlrich</a
+        >
+        <p>An instructor focused on helping pople start programming for web</p>
+
+        <ul id="socialLinks">
+          <li class="youtube">
+            <a href="https://www.youtube.com/user/marcoswlrich" target="_blank"
+              ><img src="img/youtube.svg" alt="link youtube"
+            /></a>
+          </li>
+
+          <li class="instagram">
+            <a href="https://www.instagram.com/marcoswlrich/" target="_blank"
+              ><img src="img/instagram.svg" alt="link instagram"
+            /></a>
+          </li>
+
+          <li class="facebook">
+            <a href="https://www.facebook.com/marcoswlrich" target="_blank"
+              ><img src="img/facebook.svg" alt="link facebook"
+            /></a>
+          </li>
+
+          <li class="twitter">
+            <a href="https://twitter.com/marcoswlrich_" target="_blank"
+              ><img src="img/twitter.svg" alt="link twitter"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <script>
+      const LinksSocialMedia = {
+        github: 'marcoswlrich',
+        youtube: 'marcoswlrich',
+        facebook: 'marcoswlrich',
+        instagram: 'marcoswlrich',
+        twitter: 'marcoswlric_'
+      }
+
+      function changeSocialMediaLinks() {
+        for (let li of socialLinks.children) {
+          const social = li.getAttribute('class')
+
+          li.children[0].href = `https://${social}.com/${LinksSocialMedia[social]}`
+
+      
+        }
+      }
+      changeSocialMediaLinks()
+    </script>
+  </body>
+</html>
