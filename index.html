@@ -15,13 +15,16 @@
           <span>
             <img src="img/rocketseat.svg" alt="Selo Rocketseat" />
           </span>
-          <img src="img/perfil.jpg" alt="Foto perfil" />
+          <img id="userPhoto" src="img/perfil.jpg" alt="Foto perfil" />
         </div>
         <h1 id="userName">Marcos Wlrich</h1>
-        <a href="" target="_blank"
-          ><img src="img/github 2.svg" alt="Github" /> marcoswlrich</a
+        <a id="userLink" href="https://github.com/marcoswlrich" target="_blank"
+          ><img src="img/github 2.svg" alt="Github" />
+          <span id="userLogin">name</span></a
         >
-        <p>An instructor focused on helping pople start programming for web</p>
+        <p id="userBio">
+          An instructor focused on helping pople start programming for web
+        </p>
 
         <ul id="socialLinks">
           <li class="youtube">
@@ -50,25 +53,6 @@
         </ul>
       </div>
     </main>
-    <script>
-      const LinksSocialMedia = {
-        github: 'marcoswlrich',
-        youtube: 'marcoswlrich',
-        facebook: 'marcoswlrich',
-        instagram: 'marcoswlrich',
-        twitter: 'marcoswlric_'
-      }
-
-      function changeSocialMediaLinks() {
-        for (let li of socialLinks.children) {
-          const social = li.getAttribute('class')
-
-          li.children[0].href = `https://${social}.com/${LinksSocialMedia[social]}`
-
-      
-        }
-      }
-      changeSocialMediaLinks()
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
